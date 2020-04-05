@@ -19,9 +19,9 @@ class Parser():
             left = p[0]
             right = p[2]
             operator = p[1]
-            if operator.gettokentype() == 'SUM'
+            if operator.gettokentype() == 'SUM':
                 return Sum(left, right)
-            elif operator.gettokentype() == 'SUB'
+            elif operator.gettokentype() == 'SUB':
                 return Sub(left, right)
 
         @self.pg.production('expression : NUMBER')
